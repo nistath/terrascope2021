@@ -2,6 +2,16 @@ html, body {
   height: 100%;
 }
 
+.mission {
+  display: inline;
+  font-size: 16pt;
+}
+
+body {
+  padding-top: 59px;
+  /* quite hacky to say the least */
+}
+
 .logo {
   height: 30px;
 }
@@ -15,6 +25,17 @@ html, body {
 
 .item-col {
   padding: 0px;
+}
+
+.fade, .item-col {
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+.fade:hover, .item-col:hover {
+  opacity: 0.5;
 }
 
 .carousel-item img {
